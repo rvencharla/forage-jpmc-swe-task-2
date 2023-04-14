@@ -222,7 +222,7 @@ def run(routes, host='0.0.0.0', port=8080):
     """ Runs a class as a server whose methods have been decorated with
         @route.
     """
-
+    
     class RequestHandler(http.server.BaseHTTPRequestHandler):
         def log_message(self, *args, **kwargs):
             pass
